@@ -1,38 +1,60 @@
-.App {
+.head-bar {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-bar h1 {
+  font-size: 40pt;
+  text-align: center;
+  background-color: blue;
+  margin: 10px auto;
+  width: 500px;
+  padding: 10px;
+}
+.btn-add {
+  width: 120px;
+  height: 40px;
+}
+
+.contain {
+  background-color: #ffff;
+}
+
+@media only screen and (max-width: 582px) {
+  .btn-add {
+    width: 50px;
+    height: 20px;
+    font-size: 5px;
+  }
+  .head-bar h1 {
+    font-size: 20pt;
+    text-align: center;
+  }
+  .title-list {
+    font-size: large;
+  }
+}
+
+.title-list {
+  margin: 10px;
+}
+
+.delete-todo {
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  right: 0;
+  color: rgb(238, 12, 12);
+}
+
+.message-title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-todo {
+  margin: 10px auto;
+  max-width: 500px;
+  max-height: 90px;
 }
