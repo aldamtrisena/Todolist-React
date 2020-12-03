@@ -13,8 +13,8 @@ function TodoCard() {
   return (
     <div>
       <Container>
-        <h3 className="title-list">List Todo</h3>
-        {todos.length === 0 && <h4 className="message-title">Empty Todos</h4>}
+        <h3 className="title-list">To Do List</h3>
+        {todos.length === 0 && <h4 className="message-title">Empty To do</h4>}
         <ListGroup className="list-todo">
           {todos.map((el) => {
             return (

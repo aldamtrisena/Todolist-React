@@ -36,10 +36,10 @@ function Todo() {
   }
   return (
     <div className="head-bar">
-      <h1>Todo's App</h1>
+      <h1>To Do's App</h1>
       <div className="container contain">
         <Button onClick={() => setShow(true)} className="btn-add">
-          <i className="fa fa-plus" /> Add Todo
+          <i className="fa fa-plus" /> Add To Do
         </Button>
       </div>
       <div>
